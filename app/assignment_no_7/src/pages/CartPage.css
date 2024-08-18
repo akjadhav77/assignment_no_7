@@ -1,0 +1,33 @@
+.flash_message {
+  background-color: #dff0d8;
+  color: #3c763d;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.cartpage_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cartitems_li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.remove_btn {
+    border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(255, 84, 84);
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-top: 10px;
+}

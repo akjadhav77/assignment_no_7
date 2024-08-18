@@ -1,0 +1,26 @@
+* {
+  font-family: sans-serif;
+  /* font-style: italic; */
+  /* width: 1400px; */ 
+  /* height: 1000px; */
+  /* background-color: gray; */
+}
+
+nav {
+  height: 4rem;
+  /* text-decoration: none; */
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+
+.main_container {
+  max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h4 {
+  color: black;
+}

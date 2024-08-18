@@ -1,0 +1,22 @@
+.cart_summary_container {
+    border: 1px solid #ddd;
+     padding: 20px;
+     /* border: 5px solid gray;  */
+     background-color: #ebfdfc;
+     border-radius: 5px;
+     
+}
+
+
+.checko_btn {
+    border: none;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(161, 120, 255);
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
