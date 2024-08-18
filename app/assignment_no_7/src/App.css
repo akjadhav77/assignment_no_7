@@ -12,6 +12,8 @@ nav {
   display: flex;
   align-items: center;
   padding-left: 1rem;
+  /* position: fixed; */
+  background-color: rgb(214, 252, 255);
 }
 
 

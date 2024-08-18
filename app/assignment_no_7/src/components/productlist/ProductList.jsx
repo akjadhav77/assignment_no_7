@@ -19,13 +19,7 @@ const ProductList = ({ addToCart }) => {
   };
 
   useEffect(() => {
-    // axios.get('http://localhost:5000/api/products')
-    //     .then(response => {
-    //         setProducts(response.data);
-    //     })
-    //     .catch(error => {
-    //         console.error('Error fetching data:', error);
-    //     });
+   
     fetchData(API);
   }, []);
 
@@ -34,20 +28,24 @@ const ProductList = ({ addToCart }) => {
       <div className="products_container">
         <h2>Product List</h2>
         <div className="products_listing">
-          
-            {products.map((product) => (
-              <div className="products_card">
-                <div key={product.id}>
-                  <div>
-                    <strong>{product.name}</strong> - ₹ {product.price}
-                  </div>
-                  <button className="product_list_btn" onClick={() => addToCart(product)}>
-                    Add to Cart
-                  </button>
+          {products.map((product) => (
+            <div className="products_card">
+              <div key={product.id}>
+                <div className="img_box">
+                  <img className="productlist_img" src={product.img} alt="" />
                 </div>
+                <div className="product_text">
+                  <strong>{product.name}</strong> - ₹ {product.price}
+                </div>
+                <button
+                  className="product_list_btn"
+                  onClick={() => addToCart(product)}
+                >
+                  Add to Cart
+                </button>
               </div>
-            ))}
-          
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -8,7 +8,7 @@ const CartSummary = ({ cartItems }) => {
     (sum, item) => sum + item.price * item.quantity,
     0
   );
-  const fixedDiscount = subtotal > 1000 ? 100 : 0; // Example: ₹ 100 discount for orders above ₹ 1000
+  const fixedDiscount = subtotal > 1000 ? 100 : 0;
   const additionalDiscount =
     (discountPercentage / 100) * (subtotal - fixedDiscount);
   const total = subtotal - fixedDiscount - additionalDiscount;
